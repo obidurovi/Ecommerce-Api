@@ -57,11 +57,11 @@ export const login = asyncHandler(async (req, res) => {
 });
 
 /**
- * @DESC Login User
- * @ROUTE /api/v1/auth/login
+ * @DESC logout User
+ * @ROUTE /api/v1/auth/logout
  * @method POST
  * @access public
  */
 export const logout = asyncHandler(async (req, res) => {
-  res.clearCookie("accessToken").json({ message: "Logout successful" });
+  res.clearCookie("accessToken").json({ message: "Logout successfully" });
 });
